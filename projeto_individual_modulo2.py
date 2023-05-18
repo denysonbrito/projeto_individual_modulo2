@@ -12,7 +12,8 @@ def filtrar_por_notas(candidatos, nota_entrevista, teste_teorico, teste_pratico,
 
 #Lista de candidatos no formato de dicionário com chave: candidato e valor: nota
 candidatos = [{'candidato': 'Denyson', 'notas': 'e6_t8_p9_s7'}, {'candidato': 'José', 'notas': 'e8_t9_p6_s8'},
-{'candidato': 'Everaldo', 'notas': 'e2_t5_p4_s6'}, {'candidato': 'Pereira', 'notas': 'e6_t6_p7_s9'}]
+{'candidato': 'Everaldo', 'notas': 'e5_t5_p4_s6'}, {'candidato': 'Pereira', 'notas': 'e6_t6_p7_s9'}, 
+{'candidato': 'Maria', 'notas': 'e8_t7_p9_s9'}]
 
 while True: #Tratamento e validação dos dados de entrada
     try:
@@ -62,5 +63,6 @@ for index, registros in enumerate(aprovados, start=1):
     nome = registros['candidato']
     notas = registros['notas']
     print("\033[0;32m"f'{index}: {nome} {notas}')
-    if aprovados == []: #Apresenta uma mensagem caso não tenha candidato nos critérios informados
-        print("\033[1;31m"'Não temos candidatos nesses critérios, tente novamente!')
+
+if aprovados == []: #Apresenta uma mensagem caso não tenha candidato nos critérios informados
+    print("\033[1;31m"'Não temos candidatos nesses critérios, tente novamente!')
