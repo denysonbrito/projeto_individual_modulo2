@@ -11,3 +11,5 @@ baixe o arquivo e abra no ambiente de desenvolvimento integrado (IDE) de sua pre
 **Uso do programa:**
 Insira os valores de acordo com os critérios que você deseja, o programa vai buscar esses 
 candidatos na lista e vai exibir no terminal.
+
+Versão do python 3.11
